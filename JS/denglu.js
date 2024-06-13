@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const password = document.getElementById('password');
     const usernameError = document.getElementById('usernameError');
     const passwordError = document.getElementById('passwordError');
-    const submitBtn = document.getElementById('submitBtn');
-    const resetBtn = form.querySelector('button[type="reset"]');
+    const loginBtn = document.getElementById('submitBtn');
+    const registerBtn = document.getElementById('submitBtn2');
     const timeContainer = document.getElementById('time');
 
     const validateUsername = () => {
@@ -50,17 +50,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
+    loginBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // 阻止表单默认提交行为
         const isFormValid = validateUsername() && validatePassword();
         if (isFormValid) {
-            alert('表单验证通过，即将跳转');
-            window.location.href = 'showPage.html';
+            alert('表单验证通过，按确认跳转');
+            window.location.href = 'showPage.html'; 
         }
     });
 
-    resetBtn.addEventListener('click', function() {
-        window.location.href = 'zhuce.html';
+    registerBtn.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        window.location.href = 'zhuce.html'; 
     });
 
     const updateTime = () => {

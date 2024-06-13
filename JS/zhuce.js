@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const passwordError = document.getElementById('passwordError');
     const phoneError = document.getElementById('phoneError');
     const emailError = document.getElementById('emailError');
+    const registerBtn = document.getElementById('submitBtn2');
     const timeContainer = document.getElementById('time');
 
     const validateUsername = () => {
@@ -88,10 +89,17 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
         const isFormValid = validateUsername() && validatePassword() && validatePhone() && validateEmail();
         if (isFormValid) {
-            alert('表单验证通过，即将跳转');
-            window.location.href = 'index.html';
+            alert('表单验证通过，按确认跳转');
+            window.location.href = 'showPage.html';
         }
     });
+
+    registerBtn.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        window.location.href = 'index.html'; 
+    });
+
+
 
     const updateTime = () => {
         const now = new Date();

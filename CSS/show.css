@@ -95,6 +95,10 @@
     font-size: 15px;
     text-align: center;
     line-height: 70px;
+    text-decoration: none;
+}
+.copy:link,.copy:visited,.copy:hover,.copy:active{
+    color:#ffffff;
 }
 .main {
     display: flex;
@@ -288,9 +292,3 @@
     color: #666;
 }
 
-#time-container {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-    color: #000000;
-}
