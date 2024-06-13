@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="UltramanFansClub" content="width=device-width, initial-scale=1.0">
+    <title>奥特粉丝俱乐部</title>
+    <link href="./CSS/zhuce.css" rel="stylesheet" type="text/css">
+</head>
+<body id="body">
+    <div id="time-container">
+        <span id="time"></span>
+    </div>
+    <div id="register">
+        <div class="head">
+            <h1>注册</h1>
+        </div>
+        <form id="container">
+            <table>
+                <tr>
+                    <td class="tips">用户名:</td>
+                    <td>
+                        <input type="text" class="textarea" id="username" placeholder="请输入用户名">
+                        <span class="error" id="usernameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tips">用户密码:</td>
+                    <td>
+                        <input type="password" class="textarea" id="password" minlength="6" placeholder="请输入密码（不少于6位）">
+                        <span class="error" id="passwordError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tips">手机号:</td>
+                    <td>
+                        <input type="tel" class="textarea" id="phone" pattern="^\d{11}$" placeholder="请输入手机号">
+                        <span class="error" id="phoneError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tips">用户类型:</td>
+                    <td>
+                        <select id="userType">
+                            <option>学生</option>
+                            <option>粉丝</option>
+                            <option>游客</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tips">用户性别: &nbsp;</td>
+                    <td class="text">
+                        <input type="radio" name="sex" value="男">男
+                        <input type="radio" name="sex" value="女">女
+                        <input type="radio" name="sex" value="未知">未知
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tips">喜欢的奥特曼类型: &nbsp;</td>
+                    <td class="text">
+                        <input type="checkbox" name="ultramanType" value="综合">综合
+                        <input type="checkbox" name="ultramanType" value="速度">速度
+                        <input type="checkbox" name="ultramanType" value="力量">力量
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tips">出生日期: &nbsp;</td>
+                    <td>
+                        <input type="date" class="text2" id="birthDate">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tips">电子邮箱:</td>
+                    <td>
+                        <input type="email" class="textarea" id="email" placeholder="请输入邮箱">
+                        <span class="error" id="emailError"></span>
+                    </td>
+                </tr>
+            </table>
+            <div class="anniu">
+                <button type="submit" class="button" id="submitBtn">提交</button>
+                <button type="reset" class="button">重置</button>
+            </div>
+        </form>
+    </div>
+    <script src="./JS/zhuce.js"></script>
+</body>
+</html>
