@@ -12,9 +12,6 @@ body {
 
 #login {
     position: fixed;
-   /* top: 33%;
-    left: 6%;
-    transform: translate(-50%, -50%);*/
     margin-top: 300px;
     margin-left: 110px;
     padding: 20px;
@@ -29,7 +26,6 @@ body {
 #login .head {
     text-align: center;
     color: #333;
-    /*font-size: 24px;*/
     margin-bottom: 20px;
 }
 
@@ -93,7 +89,6 @@ option {
     color: #fff;
     border: none;
     cursor: pointer;
-    /*transition: background 0.3s;*/
 }
 
 .button:hover {

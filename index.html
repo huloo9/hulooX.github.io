@@ -2,41 +2,203 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <meta name="UltramanFansClub" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>奥特粉丝俱乐部</title>
-    <link href="./CSS/denglu.css" rel="stylesheet" type="text/css">
+    <link href="./CSS/index.css" rel="stylesheet" type="text/css">
 </head>
-<body id="body">
-    <div id="time-container">
-        <span id="time"></span>
-    </div>
-    <div id="login">
-        <div class="head">
-            <h1>登录</h1>
+<body>
+    <div class="header">
+        <a href="./index.html">
+        <div class="logo">
+            <img src="./Image/奥特曼图标.png" alt="logo">
         </div>
-        <form id="container">
-            <table>
-                <tr>
-                    <td class="tips">用户名:</td>
-                    <td>
-                        <input type="text" class="textarea" id="username" placeholder="请输入用户名">
-                        <span class="error" id="usernameError"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="tips">用户密码:</td>
-                    <td>
-                        <input type="password" class="textarea" id="password" minlength="6" placeholder="请输入密码（不少于6位）">
-                        <span class="error" id="passwordError"></span>
-                    </td>
-                </tr>
-            </table>
-            <div class="anniu">
-                <button class="button" id="submitBtn">登录</button>
-                <button class="button" id="submitBtn2">注册</button>
-            </div>
-        </form>
+        </a>
+        <div class="nav">
+            <ul>
+                <li><a href="https://zhuanlan.zhihu.com/p/45906524" target="_blank">奥特图鉴</a></li>
+                <li><a href="https://zhuanlan.zhihu.com/p/45906524" target="_blank">制片厂</a></li>
+                <li><a href="https://www.bilibili.com/read/cv5782404/" target="_blank">历代演员</a></li>
+                <li><a href="https://www.bilibili.com/video/BV1784y1p7bW/?spm_id_from=333.337.search-card.all.click&vd_source=c9f00752ccd3e3bf418d94a65b1dad4f" target="_blank">主题歌曲</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="搜索" />
+        </div>
+        <div class="login">
+            <a href="./denglu.html">登录</a>
+            <a href="./zhuce.html">注册</a>
+        </div>
     </div>
-    <script src="./JS/denglu.js"></script>
+
+    <div class="main">
+        <div class="first">
+                <div class="tp">
+                    <img src="./Image/奥特合照.jpeg" alt="Ultraman-1">
+                    <img src="./Image/奥特合照2.jpg" alt="Ultraman-2">
+                    <img src="./Image/奥特合照3.jpg" alt="Ultraman-3">
+                    <img src="./Image/奥特合照5.jpg" alt="Ultraman-5">
+                    <img src="./Image/迪迦变身.png" alt="Ultraman-5">
+                </div>
+            <div class="topLayer">
+                <div class="word">
+                    <p> 奥特粉丝俱乐部 </p>
+                </div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+        <div class="middle">
+            <div class="m-word">
+                <p>奥 特 英 雄</p>
+                <p>The Hero Of Ultraman</p>
+            </div>
+            <div class="m-top">
+                <div class="Ultraman hero1 ">
+                    <img src="./Image/迪迦2.png" alt="迪迦">
+                    <div class="com">迪迦奥特曼</div>
+                    <div class="com2">
+                        21世纪初，
+                        人类之间的纷争终于结束，
+                        世界迎来了和平时期。
+                        在这个背景下，
+                        一个来自超古代的时间胶囊从宇宙飞驰而来。
+                        GUTS在回收这个胶囊以后得知，
+                        地球即将面临新的威胁，
+                        而能改变这一切的，
+                        只有在东北地区“迪迦之地”金字塔中沉睡的巨人。
+                        然而，突然出现的怪兽开始了破坏巨人石像的行动。
+                        大古队员为了阻止怪兽而陷入危机的时刻，
+                        他化为了一道光，进入了一个巨人石像的体内，
+                        自此迪迦奥特曼苏醒了过来
+                    </div>
+                </div>
+                <div class="Ultraman hero2">
+                    <img src="./Image/戴拿.png"
+                        alt="戴拿">
+                    <div class="com">戴拿奥特曼</div>
+                    <div class="com2">
+                        神秘的宇宙之光，
+                        在宇宙中和超级胜利队的队员飞鸟信相遇并与之合为一体
+                        ，在光芒中出现的新的光之巨人。
+                        人类发展至地球外开拓宇宙，
+                        同时也要面对许多新的危机与挑战。
+                        戴拿就是为了拯救进入新领域时代地球和人类而来，
+                        与来势凶猛的宇宙球体斯菲亚以及其他邪恶的宇宙侵略者作战。
+                        <br><br><br><br>
+                    </div>
+                </div>
+                <div class="Ultraman hreo3">
+                    <img src="./Image/盖亚.png"
+                        alt="盖亚">
+                    <div class="com">盖亚奥特曼</div>
+                    <div class="com2">
+                        盖亚奥特曼，
+                        由炼金之星的成员高山我梦用被地球的大地授予的红色之光变身而成的大地般红色的巨人。
+                        是一位身怀诸多绝技的奥特战士，
+                        在地球的陆地能够发挥更强的战斗力。
+                        盖亚奥特曼是高山我梦的再现，
+                        两者是完全一体化的存在，
+                        所以盖亚奥特曼的性格也如高山我梦般亲切、温和，
+                        并和XIG同伴以及搭档阿古茹奥特曼一起，
+                        为了保卫地球而和从宇宙袭来的“根源的破灭招来体”作战
+                        <br><br>
+                    </div>
+                </div>
+                <div class="Ultraman hero4">
+                    <img src="./Image/梦比优斯.png"
+                        alt="梦比优斯">
+                    <div class="com">梦比优斯奥特曼</div>
+                    <div class="com2">
+                        梦比优斯奥特曼，
+                        他是光之国距离爱迪奥特曼离开地球后、
+                        时隔二十五年才在地球上再度降临的年轻奥特战士。
+                        梦比优斯是宇宙警备队的新秀，
+                        运用奥特之父赠予的“梦比姆气息”，
+                        变化出梦比姆光剑和梦比姆射线等必杀技作战。
+                        在地球上化身为名叫日比野未来的青年，
+                        加入“CREW GUYS”的队伍，
+                        与伙伴们为保卫地球的和平共同努力。
+                        在最终话打败了安培拉星人后，
+                        梦比优斯告别了地球的同伴们后回归光之国，
+                        成为了奥特兄弟的一员。
+                    </div>
+                </div>
+            </div>
+            <div class="m-word">
+                <p>地球防卫队</p>
+                <p>Earth Defense Force</p>
+            </div>
+            <div class="m-bottom">
+                <div class="m-com">
+                    <img src="./Image/GUTS队图标.png"
+                        alt="GUTS">
+                    <div class="des1">GUTS队</div>
+      
+                </div>
+                <div class="m-com">
+                    <img src="./Image/XIG队图标.jpg"
+                        alt="XIG">
+                    <div class="des1">XIG队</div>
+                </div>
+                <div class="m-com">
+                    <img src="./Image/GUYS队图标.png"
+                        alt="GUYS">
+                    <div class="des1">GUYS队</div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="b-word">
+                <h2>近期新闻</h2>
+            </div>
+            <div class="news-container">
+                <div class="news-item">
+                    <a href="https://www.sohu.com/a/676259714_120192821">
+                    <img src="./Image/新闻1.jpg" alt="新闻图片1">
+                    <div class="news">
+                        <h3>大消息！中国本土新奥？ </h3>
+                        <p>圆谷的奥特曼系列，一直都没有拍摄出中国本土的奥特曼，而在圆谷展开的未来计划书中，已经明确要打造中国本土新奥大电影，这可能是一个重大而惊喜的消息...</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="news-item">
+                    <a href="https://aiqicha.baidu.com/qifuknowledge/detail?id=10038274671">
+                    <img src="./Image/新闻2.jpg" alt="新闻图片2">
+                    <div class="news">
+                        <h3>“奥特曼”的公司打赢版权</h3>
+                        <p>4 月 24 日，日本圆谷株式会社在东京召开新闻发布会，法院最终认定，泰国辛波特所持有的所谓奥特曼海外独家使用权合同系伪造且无效。</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="news-item">
+                    <a href="https://new.qq.com/rain/a/20240605A00R4F00">
+                    <img src="./Image/新闻3.jpg" alt="新闻图片3">
+                    <div class="news">
+                        <h3>奥特曼，港交所“打群架”</h3>
+                        <p>奥特曼，这个享誉全球的超级IP，历经60年岁月洗礼依然经久不衰，不仅在中国市场重新刮起奥特曼小旋风，还因为卡游和布鲁可集体冲击港股IPO,在资本市场集结成了奥特曼板块</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="news-item">
+                    <a href="https://baijiahao.baidu.com/s?id=1801199019307669989&wfr=spider&for=pc">
+                    <img src="./Image/新闻4.jpg" alt="新闻图片4">
+                    <div class="news">
+                        <h3>亚刻奥特曼1-4话官方公开</h3>
+                        <p>亚刻奥特曼将放送有关第1-4话方面的官方剧照和详细的剧情，这次也正式公开了，简单来说一下前期故事的走向和发展吧</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    <div class="footer">
+        <a class="copy" href="https://space.bilibili.com/30896998?spm_id_from=333.788.0.0">
+        <p>&copy; 刘昊江WEB页面设计</p>
+        </a>
+    </div>
+    <script src="./JS/index.js"></script>
 </body>
 </html>

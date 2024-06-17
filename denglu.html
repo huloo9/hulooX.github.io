@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="UltramanFansClub" content="width=device-width, initial-scale=1.0">
+    <title>奥特粉丝俱乐部</title>
+    <link href="./CSS/denglu.css" rel="stylesheet" type="text/css">
+</head>
+<body id="body">
+    <div id="time-container">
+        <span id="time"></span>
+    </div>
+    <div id="login">
+        <div class="head">
+            <h1>登录</h1>
+        </div>
+        <form id="container">
+            <table>
+                <tr>
+                    <td class="tips">用户名:</td>
+                    <td>
+                        <input type="text" class="textarea" id="username" placeholder="请输入用户名">
+                        <span class="error" id="usernameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tips">用户密码:</td>
+                    <td>
+                        <input type="password" class="textarea" id="password" minlength="6" placeholder="请输入密码（不少于6位）">
+                        <span class="error" id="passwordError"></span>
+                    </td>
+                </tr>
+            </table>
+            <div class="anniu">
+                <button class="button" id="submitBtn">登录</button>
+                <button class="button" id="submitBtn2">注册</button>
+            </div>
+        </form>
+    </div>
+    <script src="./JS/denglu.js"></script>
+</body>
+</html>

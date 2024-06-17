@@ -90,13 +90,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const isFormValid = validateUsername() && validatePassword() && validatePhone() && validateEmail();
         if (isFormValid) {
             alert('表单验证通过，按确认跳转');
-            window.location.href = 'showPage.html';
+            window.location.href = 'index.html';
         }
     });
 
     registerBtn.addEventListener('click', function(event) {
         event.preventDefault(); 
-        window.location.href = 'index.html'; 
+        window.location.href = 'denglu.html'; 
     });
 
 

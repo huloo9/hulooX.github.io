@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     loginBtn.addEventListener('click', function(event) {
-        event.preventDefault(); // 阻止表单默认提交行为
+        event.preventDefault(); 
         const isFormValid = validateUsername() && validatePassword();
         if (isFormValid) {
             alert('表单验证通过，按确认跳转');
-            window.location.href = 'showPage.html'; 
+            window.location.href = 'index.html'; 
         }
     });
 
